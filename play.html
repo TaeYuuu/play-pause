@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>정신차려이친구야</title>
+	<style>
+		body{background: red; }
+		#model{width: 600px; position: absolute; margin: auto; left: 50%; top: 25%; transform:translateX(-50%);}
+		#model:hover{cursor:pointer;}
+
+
+		#redSquare{width: 200px; height: 400px; margin: auto; position: absolute; left: 10%; top: 20%; transform:translateX(-50%);background: red; animation: horizon 2s infinite alternate;}
+		#redSquare2{width: 80px; height: 400px; margin: auto; position: absolute; left: 10%; top: 20%; transform:translateX(-50%);background: red; animation: horizon 1s infinite alternate-reverse;}
+		#redSquare3{width: 80px; height: 400px; margin: auto; position: absolute; left: 10%; top: 20%; transform:translateX(-50%);background: red; animation: horizon 3s infinite alternate;}
+		#cow{width:0px; margin: auto; position: relative; margin-top: 100px; }
+		#cow1{width:0px; margin: auto; position: relative; }
+		#cow2{width:0px; margin: auto; position: relative; }
+		#cow3{width:0px; margin: auto; position: relative; }
+		#cow4{width:0px; margin: auto; position: relative; }
+		#cow5{width:0px; margin: auto; position: relative; }
+
+
+
+
+		
+		@keyframes horizon {
+	
+		    from{margin-left:300px;}
+		    to{margin-left: 1050px;}
+		}
+		.iwrap {cursor: pointer;}
+
+		video {position: absolute; left: 50%; top: 20%; transform:translateX(-50%); width: 1px; transition: all 2s;}
+
+
+	</style>
+</head>
+<body>
+	<img src="cow.gif" id="cow">
+	<img src="cow.gif" id="cow1">
+	<img src="cow.gif" id="cow2">
+	<img src="cow.gif" id="cow3">
+	<img src="cow.gif" id="cow4">
+	<img src="cow.gif" id="cow5">
+	<img src="vsmodel.gif" id="model">
+
+	
+
+	
+	<div id="redSquare"></div>
+	<div id="redSquare2"></div>
+	<div id="redSquare3"></div>
+	<video id= "mommy" class="iwrap" src="mommy.mp4" type="video/mp4"; loop=loop; ></video>
+	
+
+	<script type="text/javascript">		
+		
+
+		model.onclick = function(){
+			
+				mommy.setAttribute("src","mommy.mp4");			
+				mommy.style.width="1000px";
+				mommy.play();	
+		}
+
+		mommy.onclick = function(){
+				
+				cow.setAttribute("src","cow.gif");			
+				cow.style. width="550px";
+				cow1.setAttribute("src","cow.gif");			
+				cow1.style. width="550px";
+				cow2.setAttribute("src","cow.gif");			
+				cow2.style. width="550px"; 
+				cow3.setAttribute("src","cow.gif");			
+				cow3.style. width="550px"; 
+				cow4.setAttribute("src","cow.gif");			
+				cow4.style. width="550px"; 
+				cow5.setAttribute("src","cow.gif");			
+				cow5.style. width="550px";  
+				
+		}
+
+
+	</script>
+
+</body>
+</html>
